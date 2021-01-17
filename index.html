@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a name="section1"></a>
+  <section>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="box">
+      <div class="square" style="--i:0;"></div>
+      <div class="square" style="--i:1;"></div>
+      <div class="square" style="--i:2;"></div>
+      <div class="square" style="--i:3;"></div>
+      <div class="square" style="--i:4;"></div>
+      <div class="square" style="--i:5;"></div>
+
+      <div class="main">
+      <h1 class="main-header">
+        Deepa's Portfolio
+      </h1>
+        <!--Nav bar-->
+        <nav class="main-nav">
+          
+          
+          <ul>
+              <li>
+                  <a href="#section1">
+                      <i class="fa fa-home"></i> Home</a>
+              </li>
+              <li>
+                  <a href="#section2">
+                      <i class="fa fa-user-circle-o"></i> About me</a>
+              </li>
+              <li>
+                  <a href="#section3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+                      <path d="M9.669.864L8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193l.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                      <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                    </svg>Resume</a>
+              </li>
+              <li>
+                  <a href="#section4">
+                      <i class="fa fa-envelope-o"></i> Contact Me</a>
+              </li>
+          </ul>
+      </nav>
+    </div>
+        <!--END Nav bar-->
+        
+        <div class="page-wrapper">
+
+          <!--Hero Section-->
+          
+          <div class="section container hero-section" data-section="section1">
+            <p>
+              <b>Hello Everyone</b>, I Deepa Agrawal Welcome you all to my Portfolio.
+            </p>
+          </div>
+
+          <!--End Hero Section-->
+
+          <!--About me-->
+          <a name="section2"></a>
+          <div class="section container about-me" data-section="section2">
+            
+            <h2>
+              About me
+            </h2>
+            <div class="row">
+              
+              <div class="col-md-8 desc">
+                  <h3>Deepa</h3>
+                  <p>Hello Everyone I am Deepa Agrawal.</p>
+                  <p>I am from Nanded. I am a second year CSE student in PICT. I have completed my education upto HSC in Nanded. I like to read books, listen music and creating some websites. Currently I am exploring all fields to find my field of intrest.</p>
+                  
+              </div>
+              <div class="col-md-4">
+                <span class="text-justify">Student</span>
+                <img src="image\WhatsApp Image 2021-01-17 at 15.46.08.jpeg" alt="My Pic" class="img-fluid" width="200px" height="200px">
+               
+            </div>
+          </div>
+          </div>
+
+          <!--End About me-->
+
+          <!--Resume-->
+          <a name="section3"></a>
+          <div class="section container resume" data-section="section3">
+            
+            <h2>
+              Resume
+            </h2>
+            <br>
+            <br>
+              <img src="image/0001.jpg" alt="Resume" width="500px" height="600px">
+          </div>
+
+          <!--End Resume-->
+    
+    
+    
+    
+          <!--Contact-->
+          <a name="section4"></a>
+          <div class="section container contact" data-section="section4">
+            
+            <h2>
+              Contact Me
+            </h2>
+            <span id="span">
+              If you have any suggestion, queries or want to contact me please fill the form below and send the questions or suggestions in the textarea given below.
+            </span>
+            <form>
+             <div class="row">
+                <div class="col-md-6">
+                  <fieldset>
+                    <input
+                      name="name"
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your name..."
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <input
+                      name="email"
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your email..."
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input
+                      name="subject"
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      placeholder="Subject..."
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                  <textarea
+                    name="message"
+                    rows="6"
+                    class="form-control"
+                    id="message"
+                    placeholder="Your message..."
+                    required=""
+                  ></textarea>
+                  </fieldset>
+                </div>
+                      <div class="col-md-12">
+                        <fieldset>
+                          <button type="submit" id="form-submit" class="button">
+                            Send Message
+                          </button>
+                        </fieldset>
+                      </div>
+                    </div>
+              </div>
+            </form>
+          </div>
+
+          <!--End Contact Section-->
+    
+         
+        </div>
+    </div>
+  </div>
+  </section>
+
+
+
+
+
+  
+
+   <script src="script.js" type="javascript/text"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
