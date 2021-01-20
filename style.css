@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+
+body{
+    font-family: 'Frank Ruhl Libre', serif;
+    margin: 0;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+
+}
+
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .color:nth-child(1){
+    top: -350px;
+    width: 600px;
+    height: 600px;
+    background: #fc36b0;
+}
+
+section .color:nth-child(2){
+    bottom: -150px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    background: #fffd87;
+}
+section .color:nth-child(3){
+    bottom: 50px;
+    right: 100px;
+    width: 300px;
+    height: 300px;
+    background: #00d2ff;
+}
+.box{
+    position: relative;
+}
+
+.box .square{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+.main{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        transform: translateY(-40px);
+    }
+    50%
+    {
+        transform: translateY(40px);
+    }
+}
+
+.box .square:nth-child(1)
+{
+    top: 150px;
+    right:60px;
+    width: 100px;
+    height: 100px;
+}
+
+.box .square:nth-child(2)
+{
+    top: 150px;
+    left:90px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+
+.box .square:nth-child(3)
+{
+    bottom: 100px;
+    right: 80px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+.box .square:nth-child(4)
+{
+    bottom : 680px;
+    left:140px;
+    width: 50px;
+    height: 50px;
+}
+
+.box .square:nth-child(5)
+{
+    top : 680px;
+    right:140px;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+}
+
+.box .square:nth-child(6)
+{
+    top : 620px;
+    left:140px;
+    width: 80px;
+    height: 80px;
+}
+
+.box .square:nth-child(7)
+{
+    top : 1280px;
+    right:100px;
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+}
+
+.box .square:nth-child(8)
+{
+    top : 1120px;
+    left:140px;
+    width: 50px;
+    height: 50px;
+}
+
+.main-nav li:any-link{
+    background-color: green;
+}
+.main-header{
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2AvNn_QnhDGuHhMqmQuFKroD8WGgE1r1wfQ&usqp=CAU");
+    background-size: cover; */
+    padding: 15px;
+    color: white; 
+    text-align: center;
+    position: relative;
+    line-height: 9rem;
+   
+}
+.main-header h1{
+    font-size: 35px;
+}
+/* ---------- Main Navigation --------- */
+.main-nav{
+    background-color: #090C01;
+    overflow: hidden;
+    
+}
+.main-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-nav ul li{
+    float: left;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+    display: inline-block;
+}
+.main-nav ul li a:hover{
+    background-color: #869173;
+}
+.main-nav ul li a.active{
+    background-color: #5FCE5C;
+}
+.container
+{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.page-wrapper{
+    margin: 4rem;
+    padding: 5rem;
+    display:inline-block;
+    margin-top: 0;
+}
+
+.page-wrapper .hero-section{
+    
+    
+    padding: 10rem;
+    z-index: 2;
+    margin: 2rem ; 
+    border-radius: 1rem;
+    height: 25rem;
+  
+   display: inline-block;
+   overflow: hidden;
+   
+}
+.page-wrapper .hero-section:hover{
+    box-shadow: 10px 10px 10px black;
+    width: 98%;
+}
+.page-wrapper .hero-section p{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.page-wrapper .hero-section p:hover{
+    text-shadow: 10px 10px 15px black;
+}
+
+.page-wrapper h2{
+    text-align: center;
+    text-decoration: underline ;
+    text-decoration-style:double;
+}
+
+.about-me {
+    text-align: center;
+    z-index:2;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 2rem;
+    font-size: 1.3rem;
+    
+}
+.about-me:hover{
+    box-shadow: 10px 10px 10px black;
+    width: 98%;
+}
+
+.skills {
+    text-align: left;
+    z-index:2;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 2rem;
+    font-size: 1.3rem;
+    
+}
+.skills:hover{
+    box-shadow: 10px 10px 10px black;
+    width: 98%;
+}
+.skills ul{
+    font-size: 1rem;
+    padding: 1rem;
+    margin-left: 5rem;
+}
+.skills img{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.skills img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px #090C01;
+}
+
+.projectGallery {
+    text-align: center;
+    z-index:2;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 2rem;
+    
+}
+.projectGallery:hover{
+    box-shadow: 10px 10px 10px black;
+    width: 98%;
+}
+.projectGallery img{
+    border: 2px solid #090C01;
+     width: 500px; 
+    /* float: left; */
+    margin: 7px;
+    padding: 7px;
+    border-radius: 10px;
+    text-align: center;
+    height: 300px;
+}  
+.projectGallery img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px #090C01;
+}
+.contact {
+    text-align: center;
+    z-index:2;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 2rem;
+    
+}
+.contact:hover{
+    box-shadow: 10px 10px 10px black;
+    width: 98%;
+}
+.contact h2{
+    font-style: italic;
+}
+.contact #span{
+    text-align: center;
+    padding: 15rem 5rem 15rem 5rem;
+    font-style: italic;
+    text-shadow: 1px 7px 10px black;
+    font-weight: 600;
+    color: black;
+    font-size: 1.3rem;
+}
+    
+.contact form input{
+    margin: 1rem 1rem 1rem 0; 
+    padding: 1rem;
+    border-radius: 5rem;
+    border-color:rgb(29, 10, 117) ;
+}
+
+.contact form input:focus{
+    box-shadow:10px 10px 10px black;
+    border: rgb(29, 10, 117) ;
+}
+
+
+.contact form textarea{
+    margin: 1rem 1rem 1rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-color:rgb(29, 10, 117) ;
+}
+
+.contact form textarea:focus{
+    box-shadow:10px 10px 10px black;
+    border: rgb(29, 10, 117) ;
+}
+
+.contact form button{
+    margin: 1rem;
+    border-radius: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-color:rgb(29, 10, 117) ;
+    background-color: white;
+    text-shadow:10px 10px 10px black ;
+}
+
+.contact form button:focus{
+    box-shadow:10px 10px 10px black;
+    border: rgb(29, 10, 117) ;
+}
